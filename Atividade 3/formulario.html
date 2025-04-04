@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro Rubro-Negro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Formulário do Torcedor Rubro-Negro</h1>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Identificação do Flamenguista</legend>
+
+      <label>Nome: <input type="text" name="nome" required /></label><br />
+      <label>Email: <input type="email" name="email" required /></label><br />
+      <label>Idade: <input type="number" name="idade" min="0" /></label><br />
+      <label>Data de nascimento: <input type="date" name="data_nascimento" /></label><br />
+      <label>Telefone: <input type="tel" name="telefone" /></label><br />
+    </fieldset>
+
+    <fieldset>
+      <legend>Amor pelo Mengão</legend>
+
+      <p>Você é sócio-torcedor?</p>
+      <label><input type="radio" name="socio" value="sim" required /> Sim</label><br />
+      <label><input type="radio" name="socio" value="nao" /> Ainda não</label><br />
+
+      <p>O que mais representa sua paixão?</p>
+      <label><input type="checkbox" name="paixao" value="maracana" required /> Maracanã</label><br />
+      <label><input type="checkbox" name="paixao" value="mantofla" /> Manto Sagrado</label><br />
+      <label><input type="checkbox" name="paixao" value="titulos" /> Títulos e Glórias</label><br />
+      <label><input type="checkbox" name="paixao" value="zico" /> Zico, o Galinho</label><br />
+      <label><input type="checkbox" name="paixao" value="nacao" /> A Nação Rubro-Negra</label><br />
+    </fieldset>
+
+    <fieldset>
+      <legend>Outras informações</legend>
+
+      <label>Cor favorita: <input type="color" name="cor" value="#ff0000" /></label><br />
+      <label>Horário preferido para ver jogos: <input type="time" name="horario" /></label><br />
+      <label>Envie uma foto com o manto: <input type="file" name="foto" /></label><br />
+    </fieldset>
+
+    <input type="submit" value="Enviar para o Mengão" />
+    <input type="reset" value="Limpar" />
+  </form>
+</body>
+</html>
+
